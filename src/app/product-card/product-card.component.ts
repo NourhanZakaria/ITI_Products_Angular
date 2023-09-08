@@ -62,7 +62,7 @@ export class ProductCardComponent {
       if(findItem)
       {
          findItem.quantity=findItem.quantity+1;
-         findItem.price=findItem.price*findItem.quantity;
+         
       }
       else{
        res.quantity=1;      

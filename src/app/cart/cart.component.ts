@@ -18,7 +18,7 @@ export class CartComponent {
   products:Array<any>=[];
   counter:number=0;
   total:number=0;
-  totalPro:number=0;
+
   constructor(private productService: ProductService,private counterService: CounterCardService,private activeRouter:ActivatedRoute,private router:Router) {}
 
 
@@ -30,7 +30,7 @@ export class CartComponent {
     )
    
     for(let obj in this.products){
-    this.total+=this.products[obj].price
+       this.total+=this.products[obj].price
     }
     
 
